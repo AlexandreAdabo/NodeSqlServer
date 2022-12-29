@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+  <title>Formulário LivU</title>
+</head>
+
+<body style="background-color: gray;">
+  <form action="/post" method="POST">
+    <div style="display: flex; justify-content: space-around; margin: 1vw;">
+      <div id="Resultado"></div>
+      <div class="ui input">
+        <input id="nome" type="text" placeholder="Nome" name="nome">
+      </div>
+      <div class="ui input">
+        <input id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome">
+      </div>
+      <div class="ui input">
+        <input id="email" type="text" placeholder="E-mail" name="email">
+      </div>
+      <button id="botaoAPI" type="submit" class="ui button">Salvar</button>
+    </div>
+  </form>
+  <div id="ResultNome"></div>
+  <div id="ResultSobrenome"></div>
+  <div id="ResultEmail"></div>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+  </script>
+  <script src="../semantic/semantic.min.js"></script>
+</body>
+
+</html>
